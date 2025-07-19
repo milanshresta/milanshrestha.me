@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 138px;
+    height: auto;
+}
+
+.herotext{
+    justify-items: end;
+    align-self: flex-end;
+    width: 40%;
+}
+
+.herocopy{
+    font-size: 58px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-align: right;
+    padding: 0 0 20px 0;
+}
+
+.portfolio{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.tempfooter {
+    display: flex;
+    padding: 80px 0 20px 138px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name, .familyname {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.line {
+    width: 79%;
+    height: 1px;
+    padding: 7px 10px 0 10px;
+}
+
+.hr {
+    border: 1px solid #141414;
+}
