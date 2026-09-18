@@ -1,0 +1,82 @@
+/* [project]/src/app/about/page.module.css [app-client] (css) */
+.page-module__NfDiEG__header {
+  border-bottom: 1px solid var(--border);
+  padding: 64px 0 48px;
+}
+
+.page-module__NfDiEG__title {
+  letter-spacing: -.02em;
+  max-width: 16ch;
+  margin: 0 0 20px;
+  font-size: clamp(36px, 5.5vw, 56px);
+  font-weight: 800;
+}
+
+.page-module__NfDiEG__body {
+  padding: 56px 0;
+}
+
+.page-module__NfDiEG__body p {
+  margin-bottom: 20px;
+  font-size: 17.5px;
+}
+
+.page-module__NfDiEG__timeline {
+  margin-top: 12px;
+}
+
+.page-module__NfDiEG__stage {
+  border-top: 1px solid var(--border);
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 20px;
+  padding: 22px 0;
+  display: grid;
+}
+
+.page-module__NfDiEG__stage:first-child {
+  border-top: none;
+}
+
+@media (max-width: 640px) {
+  .page-module__NfDiEG__stage {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.page-module__NfDiEG__stageName {
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.page-module__NfDiEG__stageLessons {
+  font-family: var(--font-mono);
+  color: var(--ink-muted);
+  font-size: 13px;
+}
+
+.page-module__NfDiEG__factRow {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 44px 0;
+  padding: 28px 0;
+  display: flex;
+}
+
+.page-module__NfDiEG__fact {
+  font-family: var(--font-mono);
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+
+.page-module__NfDiEG__fact strong {
+  font-family: var(--font-body);
+  color: var(--ink);
+  margin-top: 4px;
+  font-size: 17px;
+  display: block;
+}
+
+/*# sourceMappingURL=src_app_about_page_module_0f104-f.css.map*/

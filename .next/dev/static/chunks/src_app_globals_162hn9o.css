@@ -1,0 +1,160 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --bg: #fafaf8;
+  --surface: #fff;
+  --surface-2: #f1f0eb;
+  --ink: #15161a;
+  --ink-muted: #55585f;
+  --ink-faint: #8a8d93;
+  --border: #e3e1da;
+  --border-strong: #c9c6bb;
+  --accent: #c81e2e;
+  --accent-ink: #fff;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --measure: 64ch;
+  --gutter: clamp(20px, 5vw, 64px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131315;
+    --surface: #1b1b1e;
+    --surface-2: #201f22;
+    --ink: #f2f1ec;
+    --ink-muted: #abaeb5;
+    --ink-faint: #797b81;
+    --border: #2b2b2f;
+    --border-strong: #3a393e;
+    --accent: #ea495a;
+    --accent-ink: #17100f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, .display, .mono, .eyebrow {
+  font-family: var(--font-display);
+  letter-spacing: -.01em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+p {
+  max-width: var(--measure);
+  margin: 0 0 1.1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.wrap {
+  max-width: 1180px;
+  padding: 0 var(--gutter);
+  margin: 0 auto;
+}
+
+.wrap-narrow {
+  max-width: 760px;
+  padding: 0 var(--gutter);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+.placeholder-media {
+  border: 1.5px dashed var(--border-strong);
+  background: var(--surface-2);
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  letter-spacing: .02em;
+  text-align: center;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  min-height: 220px;
+  padding: 32px 20px;
+  font-size: 12.5px;
+  display: flex;
+}
+
+.placeholder-media span {
+  max-width: 32ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: .7s cubic-bezier(.16, 1, .3, 1) both fadeUp;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/*# sourceMappingURL=src_app_globals_162hn9o.css.map*/

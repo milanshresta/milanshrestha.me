@@ -1,0 +1,59 @@
+.header {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: clamp(36px, 5.5vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+  max-width: 16ch;
+}
+
+.body {
+  padding: 56px 0;
+}
+
+.body p {
+  font-size: 17.5px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  margin-top: 12px;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+.stage:first-child { border-top: none; }
+
+@media (max-width: 640px) {
+  .stage { grid-template-columns: 1fr; gap: 6px; }
+}
+
+.stageName { font-weight: 600; font-size: 15.5px; }
+.stageLessons {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.factRow {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 44px 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.fact { font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); }
+.fact strong { display: block; font-family: var(--font-body); font-size: 17px; color: var(--ink); margin-top: 4px; }
